@@ -1,0 +1,48 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic body styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+/* Container for the blog preview card */
+.card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 20px auto;
+    max-width: 400px;
+}
+
+/* Image styling */
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+/* Content inside the card */
+.card-content {
+    padding: 20px;
+}
+
+/* Title styling */
+.card-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+/* Description styling */
+.card-description {
+    font-size: 1em;
+    color: #666;
+}

@@ -28,7 +28,7 @@ body {
 
 /* Main content */
 main {
-    flex: 1; /* Makes the main content area take up available space */
+    flex: 1; 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -194,7 +194,7 @@ footer a:hover {
     }
 
     .card img {
-        height: auto; /* Maintain aspect ratio */
+        height: auto;
     }
 
     .card-category {

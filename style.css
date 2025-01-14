@@ -9,18 +9,32 @@
 }
 
 /* Basic body styling */
-body {
+html, body {
+    height: 100%; 
     font-family: 'Figtree', sans-serif;
     font-size: 16px;
     background-color: #F4D04E;
     color: #333;
-    padding: 20px;
+}
+
+body {
+    padding: 0 20px;
     display: flex;
     flex-direction: column;
-    width: 1440px;
-    height: 960px;
+    max-width: 1440px;
+    min-width: 375px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Main content */
+main {
+    flex: 1; /* Makes the main content area take up available space */
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 /* Container for the blog preview card */
@@ -79,7 +93,7 @@ body {
 
 /* Published date styling */
 .card-content h3 {
-    font-family: Figtree;
+    font-family: 'Figtree', sans-serif;
     font-size: var(--font-size-text-preset-3, 14px);
     font-style: normal;
     font-weight: 500;
@@ -126,7 +140,7 @@ body {
 }
 
 .card-author h2 {
-    font-family: Figtree;
+    font-family: 'Figtree';
     font-size: var(--font-size-text-preset-3, 14px);
     font-style: normal;
     font-weight: 800;
@@ -139,4 +153,25 @@ body {
 .card-content h1:hover {
     color: #F4D04E;
     transform: scale(1.05);
+}
+
+/* Footer styling */
+
+footer {
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Figtree', sans-serif;
+    font-size: var(--font-size-text-preset-3, 14px);
+    margin-top: 20px;
+}
+
+footer a {
+    color: #111111;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #6B6B6B;
 }

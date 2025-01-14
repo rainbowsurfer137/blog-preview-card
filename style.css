@@ -22,7 +22,6 @@ body {
     display: flex;
     flex-direction: column;
     max-width: 1440px;
-    min-width: 375px;
     justify-content: space-between;
     align-items: center;
 }
@@ -174,4 +173,40 @@ footer a {
 footer a:hover {
     text-decoration: underline;
     color: #6B6B6B;
+}
+
+/* Mobile Styling */
+@media (max-width: 375px) {
+    body {
+        padding: 24 px;
+    }
+
+    .card {
+        max-width: 327px;
+        padding: 16px;
+        gap: 16px;
+        box-shadow: 4px 4px 0px 0px #000;
+    }
+
+    .card img {
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .card-category {
+        font-size: 12px;
+        padding: 4px 8px;
+    }
+
+    .card-content h1 {
+        font-size: 20px;
+    }
+
+    .card-content p {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    .card-author h2 {
+        font-size: 12px;
+    }
 }

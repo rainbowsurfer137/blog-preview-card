@@ -114,7 +114,7 @@ main {
 .card-content a {
     text-decoration: none;
     color: #111111;
-    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 /* Description styling */
@@ -156,7 +156,6 @@ main {
 .card-content a:hover {
     color: #F4D04E;
     transform: scale(1.05);
-    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 /* Footer styling */
